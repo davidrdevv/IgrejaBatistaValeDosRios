@@ -22,8 +22,8 @@ JavaScript
 Instagram
 [@ibvroficial](https://www.instagram.com/ibvroficial/)
 
-
-Acesse o site do projeto: [ibvroficial.vercel.app](https://ibvroficial.vercel.app)
+🔗 Acesse o site do projeto:
+[ibvroficial.vercel.app](https://ibvroficial.vercel.app)
 
 📜 Licença
 Este projeto é de uso exclusivo da Igreja Batista Vale dos Rios. Todos os direitos reservados.
