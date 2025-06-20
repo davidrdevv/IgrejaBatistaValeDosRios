@@ -1,5 +1,3 @@
-<!-- @format -->
-
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -10,34 +8,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Ínicio do menu -->
     <div class="menu">
-      <!-- Div para logo da página -->
       <div class="logo">
         <a href=""><img src="img/LogoMenu.png" alt="logo" /></a>
       </div>
 
-      <!-- Menu para desktop: NAV -->
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
       <nav class="menu-desktop">
         <ul>
-          <li>
-            <a href="" title="Página inicial">Inicio</a>
-          </li>
-          <li>
-            <a href="#sobreIgreja" title="Sobre">Sobre</a>
-          </li>
-          <li>
-            <a href="#ProgramacaoSemanal" title="Programação Semanal"
-              >Programação Semanal</a
-            >
-          </li>
+          <li><a href="">Inicio</a></li>
+          <li><a href="#sobreIgreja">Sobre</a></li>
+          <li><a href="#ProgramacaoSemanal">Programação Semanal</a></li>
         </ul>
       </nav>
+
+      <ul class="menu-mobile-popup" id="menuMobile">
+        <li><a href="">Inicio</a></li>
+        <li><a href="#sobreIgreja">Sobre</a></li>
+        <li><a href="#ProgramacaoSemanal">Programação Semanal</a></li>
+      </ul>
     </div>
-    <!-- Fim do menu -->
-
-    <!-- Ínicio do header -->
-
     <header class="header">
       <div class="flex">
         <div class="texto">
@@ -50,9 +41,7 @@
           </p>
           <div class="button">
             <button>
-              <a
-                href="https://www.instagram.com/igrejabatistavaledosrios/"
-                target="_blank"
+              <a href="https://www.instagram.com/ibvroficial/" target="_blank"
                 >Instagram</a
               >
             </button>
@@ -95,10 +84,7 @@
             </div>
 
             <div class="icons">
-              <a
-                href="https://www.instagram.com/igrejabatistavaledosrios/"
-                target="_blank"
-              >
+              <a href="https://www.instagram.com/ibvroficial/" target="_blank">
                 <img src="img/instagram.png" alt="" />
               </a>
               <a
@@ -182,11 +168,39 @@
         </div>
         <div class="text">
           <h1>
-            Copyright &copy; <span>igrejabatistavaledosrios.com.</span> Todos os
+            Copyright © <span>igrejabatistavaledosrios.com.</span> Todos os
             direitos reservados.
           </h1>
         </div>
       </div>
     </footer>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("menuMobile");
+        menu.classList.toggle("active");
+      }
+
+      // Fechar ao clicar fora do menu
+      document.addEventListener("click", function (event) {
+        const toggle = document.querySelector(".menu-toggle");
+        const menu = document.getElementById("menuMobile");
+
+        if (
+          !menu.contains(event.target) &&
+          !toggle.contains(event.target) &&
+          menu.classList.contains("active")
+        ) {
+          menu.classList.remove("active");
+        }
+      });
+
+      // Fechar o menu ao clicar em um item do menu (para navegação em SPA-like)
+      document.querySelectorAll("#menuMobile a").forEach((item) => {
+        item.addEventListener("click", () => {
+          const menu = document.getElementById("menuMobile");
+          menu.classList.remove("active");
+        });
+      });
+    </script>
   </body>
 </html>
