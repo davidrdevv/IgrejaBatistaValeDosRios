@@ -22,13 +22,7 @@ JavaScript
 
 📱 Redes Sociais
 Instagram
-[@ibvroficial]([https://ibvroficial.vercel.app](https://www.instagram.com/ibvroficial/))
-
-📅 Programação dos Cultos
-Dia	Culto	Horário
-Sexta-feira	Culto de comunhão	19h30
-Sábado	Culto dos jovens	18h
-Domingo	Culto de celebração	18h
+[@ibvroficial](https://www.instagram.com/ibvroficial/))
 
 📜 Licença
 Este projeto é de uso exclusivo da Igreja Batista Vale dos Rios. Todos os direitos reservados.
