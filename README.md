@@ -14,9 +14,11 @@ Programação Semanal: Exibição dos cultos com dias, horários e tipo de celeb
 
 🔧 Tecnologias Utilizadas
 
--HTML5
--CSS3
--JavaScript (se aplicável)
+HTML5
+
+CSS3
+
+JavaScript 
 
 📱 Redes Sociais
 Instagram
