@@ -1,5 +1,3 @@
-Acesse o site do projeto: [ibvroficial.vercel.app](https://ibvroficial.vercel.app)
-
 🌿 Igreja Batista Vale dos Rios
 Este é o site oficial da Igreja Batista Vale dos Rios, desenvolvido com o objetivo de apresentar a identidade da igreja, promover a comunhão e facilitar o acesso às informações importantes como a visão, missão e programação semanal.
 
@@ -23,6 +21,9 @@ JavaScript
 📱 Redes Sociais
 Instagram
 [@ibvroficial](https://www.instagram.com/ibvroficial/)
+
+
+Acesse o site do projeto: [ibvroficial.vercel.app](https://ibvroficial.vercel.app)
 
 📜 Licença
 Este projeto é de uso exclusivo da Igreja Batista Vale dos Rios. Todos os direitos reservados.
